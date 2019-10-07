@@ -1,7 +1,7 @@
 <?php
 function calcula(){
-	$a=13;
-	$b=10;
+	$a=25;
+	$b=30;
 	echo '<div>';
 		echo 'SUMA: '.$a.' + '.$b.' = ';
 		echo $a+$b;
