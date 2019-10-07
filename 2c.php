@@ -4,9 +4,8 @@
 	}
 </style>
 <?php
-function calcula(){
-$a=25;
-$b=30;
+function calcula($a,$b){
+
 	echo '<div>';
 		echo 'SUMA: '.$a.' + '.$b.' = ';
 		echo $a+$b;
@@ -26,5 +25,10 @@ $b=30;
 	echo '</div>';
 	echo '<div>...</div>';
 }
-calcula();
+calcula(25,30);
+calcula(4,3);
+calcula(9,12);
+calcula(20,60);
+calcula(200,500);
+calcula(1000,1200);
 ?>
