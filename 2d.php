@@ -15,10 +15,12 @@ function calcula($a,$b){
 		$r=$r.'PRODUCTO: '.$a.' * '.$b.' = ';
 		$r=$r.$a*$b;
 	$r=$r.'</div>';
-	$r=$r.'<div>';
-		$r=$r.'COCIENTE: '.$a.' / '.$b.' = ';
-		$r=$r.($a/$b);
-	$r=$r.'</div>';
+	if($b!=0){
+		$r=$r.'<div>';
+			$r=$r.'COCIENTE: '.$a.' / '.$b.' = ';
+			$r=$r.($a/$b);
+		$r=$r.'</div>';
+	}
 	$r=$r.'<div>';
 		$r=$r.'RESTA: '.$a.' - '.$b.' = ';
 		$r=$r.($a-$b);
