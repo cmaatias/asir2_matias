@@ -5,30 +5,29 @@
 </style>
 <?php
 function calcula($a,$b){
+	$r=null;
+	$r=$r.'<div>';
+		$r=$r.'SUMA: '.$a.' + '.$b.' = ';
+		$r=$r.($a+$b);
+	$r=$r.'</div>';
 
-	echo '<div>';
-		echo 'SUMA: '.$a.' + '.$b.' = ';
-		echo $a+$b;
-	echo '</div>';
-
-	echo '<div>';
-		echo 'PRODUCTO: '.$a.' * '.$b.' = ';
-		echo $a*$b;
-	echo '</div>';
-	echo '<div>';
-		echo 'COCIENTE: '.$b.' / '.$a.' = ';
-		echo $b/$a;
-	echo '</div>';
-	echo '<div>';
-		echo 'RESTA: '.$b.' - '.$a.' = ';
-		echo $b-$a;
-	echo '</div>';
-	echo '<div>...</div>';
+	$r=$r.'<div>';
+		$r=$r.'PRODUCTO: '.$a.' * '.$b.' = ';
+		$r=$r.$a*$b;
+	$r=$r.'</div>';
+	$r=$r.'<div>';
+		$r=$r.'COCIENTE: '.$b.' / '.$a.' = ';
+		$r=$r.$b/$a;
+	$r=$r.'</div>';
+	$r=$r.'<div>';
+		$r=$r.'RESTA: '.$b.' - '.$a.' = ';
+		$r=$r.($b-$a);
+	$r=$r.'</div>';
+	$r=$r.'<div>...</div>';
+	return $r;
 }
-calcula(25,30);
-calcula(4,3);
-calcula(9,12);
-calcula(20,60);
-calcula(200,500);
-calcula(1000,1200);
+$s=calcula(25,30);
+echo $s;
+$s=calcula(60,55);
+echo $s;
 ?>
