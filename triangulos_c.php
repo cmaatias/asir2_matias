@@ -11,7 +11,7 @@
 	</br>
 	</br>
 	<button>Comprobar</button>
-	<button href="http://localhost/asir2_james/triangulos_c.php">Poner todos los valores a 0</button>
+	<button href="http://localhost/asir2_matias/triangulos_c.php">Poner todos los valores a 0</button>
 	</br>
 	
 </form>
