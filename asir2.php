@@ -1,19 +1,14 @@
-Matías
-<a href="http://192.168.122.1/asir2_seebasbt">sebas</a>
+MATIAS
+<a href="192.168.0.145/asir2_seebasbt/asir2.php">SEBAS</a>
 <?php
-if(isset($_GET['email'])){
-	echo $_GET['email'];
-	$f=fopen('suscriptores.txt','a');
-	fwrite($f,$_GET['email']."\r\n");
-	fclose($f);
-}
+$dns=[
+	'192.168.0.67'=>'  Jose Luis',
+	'192.168.0.145'=>'  Sebas',
+	'192.168.0.64'=>'  Xanders',
+	];
 ?>
 <?php
-$f=fopen('visitas.txt','a');
-fwrite($f,$_SERVER['REMOTE_ADDR']."\r\n");
+$f=fopen('visitastimestamp.txt','a');
+fwrite($f, date('Y-m-d H:i:s').($dns[$_SERVER['REMOTE_ADDR']]."\r\n"));
 fclose($f);
 ?>
-<form>
-	<input name="email" type="email"/>
-	<button>Suscribirse</button>
-<form/>
